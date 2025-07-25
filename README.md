@@ -37,6 +37,16 @@ $ npm run start:dev
 ```
 http://localhost:3000/api/v2/seed
 ```
+
+#Production Build
+1. Create the archive ``` .env.prod ```
+2. Fill in the environment variables defined in the ```.env.prod```
+3. Create new image
+
+```
+$ docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
 # Stack used
 
 - NestJS

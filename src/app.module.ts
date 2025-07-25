@@ -19,7 +19,7 @@ import { JoiValidationSchema } from './config/joi.validation';
       rootPath: join(__dirname, '..', 'public'),
     }),
     MongooseModule.forRoot(process.env.MONGODB || 'undefined', {
-      dbName: 'pokemondb',
+      //dbName: 'nest-pokemon', si da fallos en el docker o en el mongoDB solo quita las //
     }),
     PokemonModule,
     CommonModule,
